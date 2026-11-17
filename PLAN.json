@@ -1,0 +1,75 @@
+{
+  "ridge_lambdas": [
+    0.01,
+    0.1,
+    1,
+    10,
+    100,
+    1000,
+    10000,
+    100000,
+    1000000
+  ],
+  "ridge_features": [
+    "raw",
+    "robust"
+  ],
+  "tcn_configs": [
+    {
+      "hidden": 16,
+      "weight_penalty": 0.0001
+    },
+    {
+      "hidden": 16,
+      "weight_penalty": 0.01
+    },
+    {
+      "hidden": 32,
+      "weight_penalty": 0.0001
+    },
+    {
+      "hidden": 32,
+      "weight_penalty": 0.01
+    }
+  ],
+  "tcn_optimizer": {
+    "seed": 7,
+    "epochs": 40,
+    "batch": 128,
+    "learning_rate": 0.001,
+    "gradient_clip": 5
+  },
+  "tree_configs": [
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 7
+    },
+    {
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15
+    },
+    {
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 7
+    },
+    {
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 15
+    }
+  ],
+  "tree_options": {
+    "max_iter": 100,
+    "min_samples_leaf": 30,
+    "l2_regularization": 1.0,
+    "early_stopping": false,
+    "random_state": 7
+  },
+  "seeds": [
+    7,
+    23,
+    51
+  ],
+  "purpose": "New-source Jenkins supervised trial decoding; see sealed pre-acquisition protocol.",
+  "inherited_study_sha256": "98327d3b3d0079a4681e57bf0d2c7fad0010cfb9dec0b1ce5faef07d9cdeba9b",
+  "inherited_model_sha256": "7440e654cf6e3e66956fa9bc0d5bb8b3f3d367664a8ce83d60ae26c7fce7e514"
+}

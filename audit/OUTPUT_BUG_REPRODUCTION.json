@@ -1,0 +1,6 @@
+{
+  "original_cli_suffix_bug_reproduced": true,
+  "returncode": 0,
+  "existing_npz_overwritten": true,
+  "scope": "Temporary sentinel only; no user files modified."
+}

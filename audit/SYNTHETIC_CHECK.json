@@ -1,0 +1,15 @@
+{
+  "pass": true,
+  "checked_gradient_parameters": 59,
+  "max_gradient_abs_error": 3.780116584334303e-11,
+  "checks": [
+    "TCN finite-difference gradient",
+    "half-open spike bins",
+    "union/gapped observation coverage",
+    "behavior bin edges, gaps, nonfinite rejection",
+    "native metrics",
+    "simplex grid",
+    "constant-channel transforms"
+  ],
+  "dataset_arrays_opened": false
+}

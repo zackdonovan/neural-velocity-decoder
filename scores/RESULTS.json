@@ -1,0 +1,107 @@
+{
+  "metrics": {
+    "ridge_current": {
+      "mse": 76112.81322914809,
+      "rmse": 275.8855074648686,
+      "r2_per_axis": [
+        0.4671343381889921,
+        0.2788578135400557
+      ],
+      "mean_r2": 0.3729960758645239,
+      "rows": 2752
+    },
+    "ridge_history": {
+      "mse": 31230.94861559075,
+      "rmse": 176.72280162896567,
+      "r2_per_axis": [
+        0.7772923141474535,
+        0.7090310416648755
+      ],
+      "mean_r2": 0.7431616779061645,
+      "rows": 2752
+    },
+    "tcn_seed7": {
+      "mse": 20850.953295828975,
+      "rmse": 144.39859173769312,
+      "r2_per_axis": [
+        0.8650671125485463,
+        0.7890238006673187
+      ],
+      "mean_r2": 0.8270454566079325,
+      "rows": 2752
+    },
+    "tcn_seed23": {
+      "mse": 21521.746138482788,
+      "rmse": 146.70291796171878,
+      "r2_per_axis": [
+        0.8595904025427682,
+        0.7836166796060302
+      ],
+      "mean_r2": 0.8216035410743991,
+      "rows": 2752
+    },
+    "tcn_seed51": {
+      "mse": 21481.197038670234,
+      "rmse": 146.56465139545153,
+      "r2_per_axis": [
+        0.8625996871481427,
+        0.7806891238835988
+      ],
+      "mean_r2": 0.8216444055158707,
+      "rows": 2752
+    },
+    "tcn_ensemble": {
+      "mse": 19960.282724426153,
+      "rmse": 141.28086467893007,
+      "r2_per_axis": [
+        0.8715057669008814,
+        0.7972158314483331
+      ],
+      "mean_r2": 0.8343607991746073,
+      "rows": 2752
+    },
+    "trees": {
+      "mse": 34366.62218372597,
+      "rmse": 185.3823675103055,
+      "r2_per_axis": [
+        0.7588135093812911,
+        0.6751001890026032
+      ],
+      "mean_r2": 0.7169568491919471,
+      "rows": 2752
+    },
+    "blend": {
+      "mse": 19960.282724426153,
+      "rmse": 141.28086467893007,
+      "r2_per_axis": [
+        0.8715057669008814,
+        0.7972158314483331
+      ],
+      "mean_r2": 0.8343607991746073,
+      "rows": 2752
+    },
+    "fit_mean": {
+      "mse": 123488.88515667431,
+      "rmse": 351.40985352814783,
+      "r2_per_axis": [
+        -0.0019324936550444427,
+        -0.003069290393876045
+      ],
+      "mean_r2": -0.002500892024460244,
+      "rows": 2752
+    }
+  },
+  "primary": {
+    "criterion": "Three-seed TCN ensemble MSE lower than both history ridge and trees on the fixed evaluation trials.",
+    "passed": true,
+    "mse_reduction_vs_history_ridge": 0.36088131775600907,
+    "mse_reduction_vs_trees": 0.41919567719756357,
+    "validation_selected_non_neural": "ridge_history"
+  },
+  "trial_count": 344,
+  "rows": 2752,
+  "units": "mm/s",
+  "model_freeze_sha256": "a3d636c0d1484049898fddb42a4ca7008b7039a9ad0433e63b5e783ef7e3b143",
+  "scored_utc": "2026-11-06T02:06:38.368541+00:00",
+  "scope": "Fresh to this project, one new subject/task/session; chronological trials after new-source training, not cross-animal weight transfer or unseen conditions."
+}

@@ -1,0 +1,17 @@
+{
+  "ridge_history": {
+    "trials_lower_mse": 302,
+    "total_trials": 344,
+    "blocks_lower_mse": 10,
+    "total_blocks": 10,
+    "median_trial_mse_reduction_fraction": 0.4104228193773559
+  },
+  "trees": {
+    "trials_lower_mse": 305,
+    "total_trials": 344,
+    "blocks_lower_mse": 10,
+    "total_blocks": 10,
+    "median_trial_mse_reduction_fraction": 0.45776555969369825
+  },
+  "interpretation": "Descriptive correlated trials/blocks only; not population significance or new independent sessions."
+}

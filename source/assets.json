@@ -1,0 +1,25 @@
+{
+  "count": 2,
+  "next": null,
+  "previous": null,
+  "results": [
+    {
+      "asset_id": "1bd112a4-5ec5-4033-ac30-d88e70e993d9",
+      "blob": "faf1f307-a06d-464c-8700-a659ab94ce2a",
+      "zarr": null,
+      "path": "sub-Jenkins/sub-Jenkins_ses-full_desc-test_ecephys.nwb",
+      "size": 3392688,
+      "created": "2021-09-02T05:04:24.640348Z",
+      "modified": "2021-09-02T05:04:24.866192Z"
+    },
+    {
+      "asset_id": "26e85f09-39b7-480f-b337-278a8f034007",
+      "blob": "df3e3f73-50ab-42b4-8827-82664ddd474a",
+      "zarr": null,
+      "path": "sub-Jenkins/sub-Jenkins_ses-full_desc-train_behavior+ecephys.nwb",
+      "size": 690612247,
+      "created": "2021-09-02T05:04:41.515766Z",
+      "modified": "2021-09-02T05:04:55.563735Z"
+    }
+  ]
+}

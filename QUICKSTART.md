@@ -1,0 +1,52 @@
+# Run the new-source neural experiment
+
+The compact offline check is `python check_project.py --output my_first_check` after installing requirements-inference.txt. It verifies packaged integrity and all nine saved inference streams, not full retraining.
+
+Use Python 3.12. Install the full pinned dependencies:
+
+    python -m pip install -r requirements.txt
+
+Set OPENBLAS_NUM_THREADS=1 and OMP_NUM_THREADS=1. Examples below use Bash syntax; on Windows set the variables with the appropriate shell syntax. Full retraining parity was tested on Linux. Saved-inference replay was subsequently reported to reproduce on macOS; Windows remains untested.
+
+## One prediction, no labels
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python infer.py --input example/neural_input.npz --output my_prediction.npz
+
+The output filename must end in .npz. Existing outputs, including symlinks, are refused using exclusive file creation; no extension is silently added. A caught write failure removes the partial file. If a process is forcibly killed, a partial file may remain, so require a success message before using its output.
+
+The input contains only counts and unit IDs. It uses the first chronological final-evaluation example, not a selected easy success. Open example/EXPLANATION.json to compare the prediction with truth afterward. This is saved-model inference, not training. Counts must be in the exact recorded unit order; the script rejects a mismatched list.
+
+## Repeat the complete training experiment
+
+Pick a directory that does not exist:
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python reproduce.py ../my_maze_reproduction
+
+This retrains every candidate grid on the packaged fitting arrays, chooses settings using validation only, freezes them, and repeats final scoring. It compares all saved numerical model/scaler/validation arrays, inference-critical tree state, predictions, choices, curves, trial metrics and block metrics against the original run. Runtime fields and freeze timestamps naturally differ. Reproduction uses already exposed data and is not another untouched trial. Exact parity is tested in the recorded Linux/Python/package versions; another platform may differ numerically.
+
+## Separate fitting and scoring
+
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python study.py fit --output ../my_models
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python study.py score --models ../my_models --output ../my_scores
+
+Existing output folders are refused. Do not change the fitted models or experiment settings and then call the result the same study. Any newly tuned experiment must be marked exploratory or receive a genuinely new evaluation set.
+
+## Read the evidence
+
+- scores/RESULTS.json: all models, both coordinate scores and fixed primary comparison.
+- scores/PER_TRIAL.json and CHRONOLOGICAL_BLOCKS.json: individual failures and temporal stability.
+- models/choices.json: selected neural configurations/epochs, seed ensemble, ridge/tree settings and blend weights.
+- data/metadata.json and TRIAL_LEDGER.json: splits, exclusion reasons, unit identities and condition overlap.
+- audit/: independent review, synthetic checks, raw reconstruction and numerical audits with explicit coverage limits.
+- CLEAN_REPRODUCTION.json: exact full-grid retraining and numerical parity in the recorded environment.
+
+The compact package includes all prepared arrays and saved predictions/models, but omits the 690 MB raw NWB and installed dependencies. From the package root, retrieve the exact official source into a new external directory, then run the independent audit:
+
+    python download_raw.py --directory ../maze_raw
+    OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 python audit/postscore_audit.py --post-score-confirmed --raw ../maze_raw/sub-Jenkins_ses-full_desc-train_behavior+ecephys.nwb
+
+The download utility refuses an existing directory or one inside the evidence package. It verifies the pinned source size and SHA-256 and writes a separate RAW_DOWNLOAD_RECEIPT.json beside the download. The audit independently checks the raw SHA-256 again. You can instead pass --raw an existing copy of the exact official file. SOURCE.json pins the public data source; historical acquisition and pre-registration records are not distributed.
+
+This replays the independent audit against the existing scores; it does not retrain or run original scoring again. The default results folder is scores/. A new report is written to audit/POSTSCORE_REPLAY_AUDIT.json, and existing reports are refused. For another replay, choose a new path with --report audit/another_replay.json. The preserved original audit/POSTSCORE_AUDIT.json is never overwritten by the default command. --raw may be omitted when the exact file already exists at the original raw/ path. This is reproduction of an already used recording, not a new dataset.
+
+Only load trusted trees.pkl files. Python pickle can execute code. This package's model files were generated by the included workflow and checked against the model artifact hashes; arbitrary pickle files are not safe.

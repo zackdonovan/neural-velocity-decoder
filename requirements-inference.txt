@@ -1,0 +1,5 @@
+# Minimal offline inference and release-check dependencies.
+# Use requirements.txt for the full environment, including raw NWB auditing.
+numpy==2.3.5
+scipy==1.17.0
+scikit-learn==1.8.0

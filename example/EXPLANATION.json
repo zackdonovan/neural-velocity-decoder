@@ -1,0 +1,39 @@
+{
+  "selection": "First chronological final-evaluation row, not selected for prediction quality.",
+  "source_trial_row": 1850,
+  "trial_id": 1850,
+  "bin_end_seconds": 5604.224,
+  "input_shape": [
+    1,
+    7,
+    90
+  ],
+  "sum_counts_per_bin": [
+    17,
+    20,
+    26,
+    28,
+    27,
+    30,
+    18
+  ],
+  "measured_hand_velocity_mm_s": [
+    39.90437354784417,
+    499.733488834973
+  ],
+  "predictions_mm_s": {
+    "ridge_history": [
+      221.09603837382633,
+      385.7964952317858
+    ],
+    "trees": [
+      179.8619580756013,
+      410.46189265401847
+    ],
+    "tcn_ensemble": [
+      226.5389832628783,
+      350.43118735400793
+    ]
+  },
+  "notice": "Truth is for inspection only, absent from neural_input.npz. Movement-onset labels were used offline to select the window; this is not a live onset detector."
+}

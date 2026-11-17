@@ -1,0 +1,610 @@
+{
+  "file_create_date": {
+    "shape": [
+      1
+    ],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "general/experiment_description": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "general/experimenter": {
+    "shape": [
+      2
+    ],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "general/extracellular_ephys/electrodes/filtering": {
+    "shape": [
+      192
+    ],
+    "dtype": "object",
+    "attrs": {
+      "description": "description of hardware filtering"
+    }
+  },
+  "general/extracellular_ephys/electrodes/group": {
+    "shape": [
+      192
+    ],
+    "dtype": "object",
+    "attrs": {
+      "description": "a reference to the ElectrodeGroup this electrode is a part of"
+    }
+  },
+  "general/extracellular_ephys/electrodes/group_name": {
+    "shape": [
+      192
+    ],
+    "dtype": "object",
+    "attrs": {
+      "description": "the name of the ElectrodeGroup this electrode is a part of"
+    }
+  },
+  "general/extracellular_ephys/electrodes/id": {
+    "shape": [
+      192
+    ],
+    "dtype": "int64",
+    "attrs": {}
+  },
+  "general/extracellular_ephys/electrodes/imp": {
+    "shape": [
+      192
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "description": "the impedance of the channel"
+    }
+  },
+  "general/extracellular_ephys/electrodes/location": {
+    "shape": [
+      192
+    ],
+    "dtype": "object",
+    "attrs": {
+      "description": "the location of channel within the subject e.g. brain region"
+    }
+  },
+  "general/extracellular_ephys/electrodes/x": {
+    "shape": [
+      192
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "description": "the x coordinate of the channel location"
+    }
+  },
+  "general/extracellular_ephys/electrodes/y": {
+    "shape": [
+      192
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "description": "the y coordinate of the channel location"
+    }
+  },
+  "general/extracellular_ephys/electrodes/z": {
+    "shape": [
+      192
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "description": "the z coordinate of the channel location"
+    }
+  },
+  "general/institution": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "general/keywords": {
+    "shape": [
+      5
+    ],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "general/lab": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "general/related_publications": {
+    "shape": [
+      1
+    ],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "general/session_id": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "general/subject/sex": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "general/subject/species": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "general/subject/subject_id": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "identifier": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "intervals/trials/active_target": {
+    "shape": [
+      2295
+    ],
+    "dtype": "int64",
+    "attrs": {
+      "description": "Which target is reachable and was hit. Value is the index of the target in target_pos list"
+    }
+  },
+  "intervals/trials/barrier_pos": {
+    "shape": [
+      12050,
+      4
+    ],
+    "dtype": "int64",
+    "attrs": {
+      "description": "Array with rows containing barrier location information. The first two values are the x and y coordinates of the center of the barrier, and the last two are half the width and height of the barrier, respectively"
+    }
+  },
+  "intervals/trials/barrier_pos_index": {
+    "shape": [
+      2295
+    ],
+    "dtype": "uint16",
+    "attrs": {
+      "description": "Index for VectorData 'barrier_pos'"
+    }
+  },
+  "intervals/trials/delay": {
+    "shape": [
+      2295
+    ],
+    "dtype": "int64",
+    "attrs": {
+      "description": "Delay between target presentation and go cue, in ms"
+    }
+  },
+  "intervals/trials/go_cue_time": {
+    "shape": [
+      2295
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "description": "Time of go cue delivery, as detected by the photobox"
+    }
+  },
+  "intervals/trials/id": {
+    "shape": [
+      2295
+    ],
+    "dtype": "int64",
+    "attrs": {}
+  },
+  "intervals/trials/maze_id": {
+    "shape": [
+      2295
+    ],
+    "dtype": "int64",
+    "attrs": {
+      "description": "A unique identifier for each maze, lumping all 3 `trial_version`s. `trial_type` is not unique across datasets, but `maze_id` is"
+    }
+  },
+  "intervals/trials/move_onset_time": {
+    "shape": [
+      2295
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "description": "Time of movement onset, calculated offline using a robust algorithm"
+    }
+  },
+  "intervals/trials/num_barriers": {
+    "shape": [
+      2295
+    ],
+    "dtype": "int64",
+    "attrs": {
+      "description": "The number of barriers for the trial"
+    }
+  },
+  "intervals/trials/num_targets": {
+    "shape": [
+      2295
+    ],
+    "dtype": "int64",
+    "attrs": {
+      "description": "The number of targets for the trial"
+    }
+  },
+  "intervals/trials/rt": {
+    "shape": [
+      2295
+    ],
+    "dtype": "int64",
+    "attrs": {
+      "description": "Delay between go cue and movement onset"
+    }
+  },
+  "intervals/trials/split": {
+    "shape": [
+      2295
+    ],
+    "dtype": "object",
+    "attrs": {
+      "description": "Trial split that the trial belongs to for the Neural Latents Benchmark. Can be \"train\", \"val\", \"test\", or \"none\""
+    }
+  },
+  "intervals/trials/start_time": {
+    "shape": [
+      2295
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "description": "Start time of epoch, in seconds"
+    }
+  },
+  "intervals/trials/stop_time": {
+    "shape": [
+      2295
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "description": "Stop time of epoch, in seconds"
+    }
+  },
+  "intervals/trials/success": {
+    "shape": [
+      2295
+    ],
+    "dtype": "bool",
+    "attrs": {
+      "description": "If the monkey was successful on the trial. In these benchmark files, all unsuccessful trials have been removed"
+    }
+  },
+  "intervals/trials/target_on_time": {
+    "shape": [
+      2295
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "description": "Time of target presentation, as detected by the photobox"
+    }
+  },
+  "intervals/trials/target_pos": {
+    "shape": [
+      3807,
+      2
+    ],
+    "dtype": "int16",
+    "attrs": {
+      "description": "Array with rows containing x and y coordinates of target location, respectively, for each target"
+    }
+  },
+  "intervals/trials/target_pos_index": {
+    "shape": [
+      2295
+    ],
+    "dtype": "uint16",
+    "attrs": {
+      "description": "Index for VectorData 'target_pos'"
+    }
+  },
+  "intervals/trials/trial_type": {
+    "shape": [
+      2295
+    ],
+    "dtype": "int64",
+    "attrs": {
+      "description": "A number representing the maze that was used for the trial"
+    }
+  },
+  "intervals/trials/trial_version": {
+    "shape": [
+      2295
+    ],
+    "dtype": "int64",
+    "attrs": {
+      "description": "A number 0-2 indicating which variant of the maze is presented. 0 is 1-target no-barrier, 1 is 1-target with barriers, 2 is 3-target with barriers"
+    }
+  },
+  "processing/behavior/cursor_pos/data": {
+    "shape": [
+      6809920,
+      2
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "conversion": "0.001",
+      "unit": "meters"
+    }
+  },
+  "processing/behavior/cursor_pos/reference_frame": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "processing/behavior/cursor_pos/timestamps": {
+    "shape": [
+      6809920
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "unit": "seconds"
+    }
+  },
+  "processing/behavior/eye_pos/data": {
+    "shape": [
+      6809920,
+      2
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "conversion": "0.001",
+      "unit": "meters"
+    }
+  },
+  "processing/behavior/eye_pos/reference_frame": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "processing/behavior/eye_pos/timestamps": {
+    "shape": [
+      6809920
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "unit": "seconds"
+    }
+  },
+  "processing/behavior/hand_pos/data": {
+    "shape": [
+      6809920,
+      2
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "conversion": "0.001",
+      "unit": "meters"
+    }
+  },
+  "processing/behavior/hand_pos/reference_frame": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "processing/behavior/hand_pos/timestamps": {
+    "shape": [
+      6809920
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "unit": "seconds"
+    }
+  },
+  "processing/behavior/hand_vel/data": {
+    "shape": [
+      6809920,
+      2
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "conversion": "0.001",
+      "unit": "m/s"
+    }
+  },
+  "processing/behavior/hand_vel/timestamps": {
+    "shape": [
+      6809920
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "unit": "seconds"
+    }
+  },
+  "session_description": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "session_start_time": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/core/2.4.0/namespace": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/core/2.4.0/nwb.base": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/core/2.4.0/nwb.behavior": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/core/2.4.0/nwb.device": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/core/2.4.0/nwb.ecephys": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/core/2.4.0/nwb.epoch": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/core/2.4.0/nwb.file": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/core/2.4.0/nwb.icephys": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/core/2.4.0/nwb.image": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/core/2.4.0/nwb.misc": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/core/2.4.0/nwb.ogen": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/core/2.4.0/nwb.ophys": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/core/2.4.0/nwb.retinotopy": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/hdmf-common/1.5.0/base": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/hdmf-common/1.5.0/namespace": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/hdmf-common/1.5.0/sparse": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/hdmf-common/1.5.0/table": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/hdmf-experimental/0.1.0/experimental": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/hdmf-experimental/0.1.0/namespace": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "specifications/hdmf-experimental/0.1.0/resources": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "timestamps_reference_time": {
+    "shape": [],
+    "dtype": "object",
+    "attrs": {}
+  },
+  "units/electrodes": {
+    "shape": [
+      182
+    ],
+    "dtype": "int64",
+    "attrs": {
+      "description": "the electrodes that each spike unit came from"
+    }
+  },
+  "units/electrodes_index": {
+    "shape": [
+      182
+    ],
+    "dtype": "uint8",
+    "attrs": {
+      "description": "Index for VectorData 'electrodes'"
+    }
+  },
+  "units/heldout": {
+    "shape": [
+      182
+    ],
+    "dtype": "bool",
+    "attrs": {
+      "description": "Whether the unit is held out in the test data (True) or not (False) in the Neural Latents Benchmark"
+    }
+  },
+  "units/id": {
+    "shape": [
+      182
+    ],
+    "dtype": "int64",
+    "attrs": {}
+  },
+  "units/obs_intervals": {
+    "shape": [
+      417690,
+      2
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "description": "the observation intervals for each unit"
+    }
+  },
+  "units/obs_intervals_index": {
+    "shape": [
+      182
+    ],
+    "dtype": "uint32",
+    "attrs": {
+      "description": "Index for VectorData 'obs_intervals'"
+    }
+  },
+  "units/spike_times": {
+    "shape": [
+      3642582
+    ],
+    "dtype": "float64",
+    "attrs": {
+      "description": "the spike times for each unit"
+    }
+  },
+  "units/spike_times_index": {
+    "shape": [
+      182
+    ],
+    "dtype": "uint32",
+    "attrs": {
+      "description": "Index for VectorData 'spike_times'"
+    }
+  }
+}

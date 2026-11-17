@@ -1,0 +1,6 @@
+{
+  "pass": true,
+  "fitting_rows_independently_rebuilt": 6,
+  "max_target_abs_error": 0,
+  "validation_or_evaluation_arrays_opened": false
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "parameter_scaler_validation_arrays": 38,
+  "prediction_target_index_arrays": 14,
+  "tree_numeric_arrays": 1462,
+  "scope": "Exact numerical full retraining and inference reproduction of the same exposed evidence. Runtime/file timestamps ignored; scientific choices, curves and metrics identical."
+}

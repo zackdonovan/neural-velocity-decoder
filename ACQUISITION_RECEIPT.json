@@ -1,0 +1,10 @@
+{
+  "started_utc": "2026-11-06T01:55:05.669866+00:00",
+  "completed_utc": "2026-11-06T01:55:29.931922+00:00",
+  "bytes": 690612247,
+  "sha256": "a27f84f9c31f077011062fd99a6ced199fdf19e656151f056c3c6244a408a3c4",
+  "requested_url": "https://api.dandiarchive.org/api/assets/26e85f09-39b7-480f-b337-278a8f034007/download/",
+  "final_url": "https://dandiarchive.s3.amazonaws.com/blobs/df3/e3f/df3e3f73-50ab-42b4-8827-82664ddd474a",
+  "protocol_sha256": "c748053eb9dc04c145fd4cc418b9297fd9f50af48d296c5a646a9091295075d9",
+  "transient_signed_query_omitted": true
+}

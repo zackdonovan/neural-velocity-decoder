@@ -1,0 +1,15 @@
+{
+  "scope": "Public distribution code integrity, not historical pre-registration",
+  "sha256": {
+    "model.py": "c05a0d0ff147feda32880337b9232e32ec2f937b24e18dca6b42238d18203e1e",
+    "engine.py": "e1408adeae83b74d0b1f5d1ae88b762cbdc4104299fa6651b6a23777f20c603c",
+    "study.py": "f5cb38bbd9a1871a48d3ace5b3a0ef876e59ad6a61d9f49cbe2f2c2d2182d6fc",
+    "prepare.py": "4c8b26f4831a33fe944896c9cd2c2f2ee59837266032002fe98ba0746d6a48fa",
+    "download_raw.py": "041a52b0faca4585cf678308aea759ac68406df85653b27c018fd0261d15cd79",
+    "PLAN.json": "2f1750c70951bf4e48d1d566a8723dd8c292eae37b8c021c710d4781a6494401",
+    "SOURCE.json": "7579c8d40f81421f5e48fcd9a17e0c9ea08b587af0749a4b94f0f6f5af9cc894",
+    "infer.py": "16702e52e9d79f4c9def0074ce83621df5d5ebfc6df4d78d8cb3a81675e56187",
+    "check_project.py": "13f07cfe65f6b458b9b6465180029551b8c10e5442239cf5b58e19e9d2ad6321",
+    "PUBLIC_PACKAGE.json": "f8b5330ae27934fb22f681afaac993ca7351915be59ce0974693e58b4b7dc227"
+  }
+}

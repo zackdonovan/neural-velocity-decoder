@@ -1,0 +1,21 @@
+{
+  "frozen_utc": "2026-11-06T02:06:03.722232+00:00",
+  "implementation_seal_sha256": "f8ed848919981b75dd6095152d7bd4bfc85d3630393a1b48efb9d733c975ce94",
+  "input_sha256": {
+    "data/fit.npz": "9ec19afe3546d516b84913b5860573565133e84596cbd586b5da339c589aa637",
+    "data/validation.npz": "46390f5838d7221efad043118aa21e69bc1839ec3df99ac7a6ec3227ab061469",
+    "data/metadata.json": "522b3bf25561d83ee276333c033ef4401d81f8a4aecd5afaecd5ebf6b6d2d01c",
+    "data/TRIAL_LEDGER.json": "b6121460efefc7af7e91ea6e65e869206630156125b2a165e6833206dd7b4fc9"
+  },
+  "model_sha256": {
+    "tcn_seed51.npz": "e2564ebe77cc6f6d7f7a2b25c6bd1720f966639a27ff39ff76cdfc8156ee69b2",
+    "scaler.npz": "7cbdcc213a20566109b8ff480d939a6b30407395e06fd18f9c9a4d94a5f64b65",
+    "validation.npz": "28b97505e84a785b6eecff25f29ed5a2d267d0485b8831794c72924c3fc85321",
+    "trees.pkl": "fd6f4ba89b93d2c525d12e6f754f2b6e0e42a3f8d90ece9229180688f79f6b9e",
+    "tcn_seed7.npz": "cb602b0ce1d5f380e35f619246575255e84f06c891afd880dfc46e5a288feb76",
+    "ridge_current.npz": "fff0c580c26d53491d68eb3607f4ddf2b862bb3fb07c3e17ac0a5bf5e491cb0c",
+    "ridge_history.npz": "8c5cf22c9623143e216bae501f9223749e0603a5de2f72f8b8ae950fb39f431b",
+    "tcn_seed23.npz": "1a6cd240abb73f5284df8e57fff27ab492554a033e0bf9d34f09bf2ddddb5c06",
+    "choices.json": "b3a9e30a0d78f7ddb26674acbcc608e2f2ca4de241e106867da87378e23b3887"
+  }
+}

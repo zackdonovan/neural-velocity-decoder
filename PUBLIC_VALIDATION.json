@@ -1,0 +1,23 @@
+{
+  "date_utc": "2026-11-17",
+  "scope": "Public distribution validation; not a new held-out experiment or verification of omitted historical seal chain",
+  "saved_inference": {
+    "status": "PASS",
+    "rows": 2752,
+    "streams": 9,
+    "max_prediction_difference": 0.0
+  },
+  "full_retraining": {
+    "status": "PASS",
+    "parameter_scaler_validation_arrays": 38,
+    "prediction_target_index_arrays": 14,
+    "tree_numeric_arrays": 1462,
+    "scope": "Exact numerical full retraining and inference reproduction of the same exposed evidence. Runtime/file timestamps ignored; scientific choices, curves and metrics identical."
+  },
+  "interface_tests_passed": 15,
+  "synthetic_gradient_parameters_checked": 59,
+  "synthetic_gradient_max_abs_error": 3.780116584334303e-11,
+  "synthetic_wrapper_checks": "PASS",
+  "raw_nwb_reconstruction_rerun": false,
+  "data_models_scores_unchanged": true
+}

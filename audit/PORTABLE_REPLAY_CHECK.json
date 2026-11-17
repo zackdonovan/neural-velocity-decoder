@@ -1,0 +1,34 @@
+{
+  "pass": true,
+  "evaluation_rows_raw_rebuilt": 2752,
+  "evaluation_trials": 344,
+  "all_final_streams_independently_recomputed": [
+    "ridge_current",
+    "ridge_history",
+    "tcn_seed7",
+    "tcn_seed23",
+    "tcn_seed51",
+    "tcn_ensemble",
+    "trees",
+    "blend",
+    "fit_mean"
+  ],
+  "all_validation_streams_recomputed": true,
+  "fit_only_scaling_verified": true,
+  "all_selection_minima_verified": true,
+  "all_per_trial_and_ten_block_metrics_verified": true,
+  "primary": {
+    "criterion": "Three-seed TCN ensemble MSE lower than both history ridge and trees on the fixed evaluation trials.",
+    "passed": true,
+    "mse_reduction_vs_history_ridge": 0.36088131775600907,
+    "mse_reduction_vs_trees": 0.41919567719756357,
+    "validation_selected_non_neural": "ridge_history"
+  },
+  "source_sha256_verified": true,
+  "limits": [
+    "Saved sklearn tree estimator inference reused; no independent tree-engine implementation.",
+    "Selection minima checked against complete saved validation grids; candidate models not refitted.",
+    "Raw reconstruction covers every evaluation row and six separately checked fitting rows, not all training rows.",
+    "One successful-trial source subject/session; not continuous or unseen-condition evaluation."
+  ]
+}

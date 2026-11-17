@@ -1,0 +1,12 @@
+{
+  "pass": true,
+  "checks": [
+    "label-free prediction",
+    "target-value invariance",
+    "equal three-seed ensemble",
+    "secondary fixed blend",
+    "wrong feature count rejection",
+    "implementation tamper rejection"
+  ],
+  "real_data_or_models_opened": false
+}

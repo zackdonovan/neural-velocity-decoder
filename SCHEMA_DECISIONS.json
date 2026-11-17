@@ -1,0 +1,7 @@
+{
+  "recorded_utc": "2026-11-06T01:58:25.737259+00:00",
+  "stage": "Before preparation of any velocity targets or model fitting",
+  "decision": "Initial global uniform-timestamp test rejected documented intertrial gaps. Replaced with explicit proof that all2294 gaps coincide with2295 trial boundaries, plus uniform1ms within-trial sampling and unchanged strict within-bin gap/edge criteria.",
+  "test_outcome_access": "No target values, fitted models or evaluation outcomes inspected before this correction.",
+  "units": "Official m/s conversion.001, converted to mm/s using raw*.001*1000; this equals raw values. Offset checked."
+}
